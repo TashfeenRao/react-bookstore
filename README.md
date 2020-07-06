@@ -1,68 +1,107 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<h1 align="center">
+  <br>
+    React Bookstore
+  <br>
+</h1>
 
-In the project directory, you can run:
+<h4 align="center"> This Project built using Redux and React.
+</h4>
+</br>
 
-### `yarn start`
+![Contributors](https://img.shields.io/badge/Contributor-Tashfeen-green)
+![build](https://img.shields.io/badge/build-passing-green)
+![NPM](https://img.shields.io/badge/NPM-14.01-green)
+![npm bundle size](https://img.shields.io/bundlephobia/min/react?color=green)
+![Version](https://img.shields.io/badge/version-1.0.0-green)
+![Hackage-Deps](https://img.shields.io/hackage-deps/v/json)
+![Issues](https://img.shields.io/badge/issues-0-green)
+![Twitter Follow](https://img.shields.io/twitter/follow/TashfeenDev?label=Tashfeen&style=social)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+</br>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<p align="center">
+  <a href="#key-features">Key Features</a> •
+  <a href="#how-to-use">How To Use</a> •
+  <a href="#credits">Credits</a> •
+  <a href="#related">Related</a> •
+  <a href="#license">License</a>
+</p>
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Key Features
 
-### `yarn build`
+* User can 
+* User can  
+* User can 
+* User can 
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How To Use
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+```bash
+# Clone this repository
+$ git clone https://github.com/TashfeenRao/react-bookstore
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Go into the repository
+$ cd react-bookstore
 
-### `yarn eject`
+# Install dependencies
+$ npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Run the app
+$ npm start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Screen Shot
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Comming soon
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Live version
 
-## Learn More
+https://react-bookstore-tash-den.herokuapp.com/.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Emailware
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Calculator React is an Open source. if you liked using this app or it has helped you in any way, I'd like you send me an email at <raotashfeen25@gmail.com> about anything you'd want to say about this software. I'd really appreciate it!
 
-### Code Splitting
+## Credits
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+This software uses the following open source packages:
 
-### Analyzing the Bundle Size
+- [React](https://React.org/)
+- [Node.js](https://nodejs.org/)
+- [Webpack](https://webpack.js.org/)
+- [Babel](https://babeljs.io/)
+- [Jest](https://jestjs.io/)
+- [Microverse](http://microverse.org/)
+- [Odin Project](https://www.theodinproject.com/)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## License
 
-### Making a Progressive Web App
+MIT
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Authors
+---
 
-### Advanced Configuration
+<h2>Tashfeen Rao and Denis Oluka</h2>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+Porfolio [Tashfeen Rao](https://tashfeen-rao.netlify.app/) &nbsp;&middot;&nbsp;
+</br>
+Email: tashfeendev@gmail.com &nbsp;&middot;&nbsp;
+</br>
+AngelList [TashfeenRao](https://angel.co/u/tashfeen-rao) &nbsp;&middot;&nbsp;
+</br>
+LinkedIn [Tashfeen Rao](https://www.linkedin.com/in/tashfeen-rao/) &nbsp;&middot;&nbsp;
+</br>
+Twitter [@TashfeenDev](https://twitter.com/TashfeenDev) &nbsp;&middot;&nbsp;
 
-### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Porfolio [Denis Oluka](https://olukadenis.me) &nbsp;&middot;&nbsp;
+</br>
+Email: olukadeno@gmail.com &nbsp;&middot;&nbsp;
+</br>
+AngelList [Denis Oluka](https://angel.co/u/denis-oluka) &nbsp;&middot;&nbsp;
+</br>
+LinkedIn [Denis Oluka](https://www.linkedin.com/in/denis-oluka) &nbsp;&middot;&nbsp;
+</br>
+Twitter [@dennycodev](https://twitter.com/dennycodev) &nbsp;&middot;&nbsp;
