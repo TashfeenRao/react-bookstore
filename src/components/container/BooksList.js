@@ -1,3 +1,4 @@
+/* eslint-disable import/no-cycle */
 import React from 'react';
 import Book from '../presentational/Book';
 
@@ -6,7 +7,7 @@ export default function BooksList() {
     id: 2,
     title: 'Captain America',
     category: 'Movies',
-    }
+  };
 
   return (
     <div className="booksList">

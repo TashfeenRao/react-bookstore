@@ -1,25 +1,19 @@
-
 const Actions = () => {
   const CREATE_BOOK = 'CREATE_BOOK';
   const REMOVE_BOOK = 'REMOVE_BOOK';
 
-  const createBook = () => {
-    return {
-      type: CREATE_BOOK,
-    }
-  }
+  const createBook = () => ({
+    type: CREATE_BOOK,
+  });
 
-  const removeBook = () => {
-    return {
-      type: REMOVE_BOOK,
-    }
-  }
+  const removeBook = () => ({
+    type: REMOVE_BOOK,
+  });
 
   return {
     createBook,
-    removeBook
-  }
-}
+    removeBook,
+  };
+};
 
 export default Actions;
-

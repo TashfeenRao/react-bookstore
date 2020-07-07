@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function BooksForm() {
-  const categories = ["Action", "Biography", "History", "Horror", "Kids", "Learning", "Sci-Fi"];
+  const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
   return (
     <div className="booksForm">
       <h2>BooksForm</h2>
@@ -10,7 +10,7 @@ export default function BooksForm() {
         <input type="text" placeholder="Title" name="title" required />
         <select name="category">
           {categories.map(cat => (
-            <option>{cat}</option>
+            <option key={cat}>{cat}</option>
           ))}
         </select>
         <button type="button">Add Book</button>
