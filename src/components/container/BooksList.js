@@ -1,41 +1,60 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Book from '../presentational/Book';
+import Actions from '../../actions/index';
 
-const BooksList = ({ books }) => (
+class BooksList extends Component {
+  constructor(props) {
+    super(props);
 
-  // const handleRemoveBook = (book) => {
+    this.handleRemoveBook = this.handleRemoveBook.bind(this);
+  }
 
-  // }
-  <div className="booksList">
-    <h2>Books List</h2>
+  handleRemoveBook(book) {
+    const { deleteBook } = this.props;
+    deleteBook(book);
+  }
 
-    <table>
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Title</th>
-          <th>Category</th>
-          <th>Action</th>
-        </tr>
-      </thead>
-      <tbody>
-        {books.map(book => (
-          <Book key={book.ID} book={book} />
-        ))}
+  render() {
+    const { books } = this.props;
+    return (
+      <div className="booksList">
+        <h2>Books List</h2>
 
-      </tbody>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Title</th>
+              <th>Category</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            {books.map(book => (
+              <Book key={book.ID} book={book} handleRemoveBook={this.handleRemoveBook} />
+            ))}
 
-    </table>
-  </div>
-);
+          </tbody>
+
+        </table>
+      </div>
+    );
+  }
+}
 
 const mapStateToProps = state => ({
   books: state.books,
 });
 
-export default connect(mapStateToProps)(BooksList);
+const mapDispatchToProps = dispatch => ({
+  deleteBook: book => {
+    dispatch(Actions.removeBook(book));
+  },
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(BooksList);
 
 BooksList.propTypes = {
   books: PropTypes.arrayOf(PropTypes.shape({
@@ -43,4 +62,5 @@ BooksList.propTypes = {
     title: PropTypes.string,
     category: PropTypes.string,
   })).isRequired,
+  deleteBook: PropTypes.func.isRequired,
 };

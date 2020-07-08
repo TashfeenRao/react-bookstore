@@ -9,7 +9,7 @@ const Actions = (() => {
 
   const removeBook = book => ({
     type: REMOVE_BOOK,
-    payload: book,
+    book,
   });
 
   return {
