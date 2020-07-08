@@ -1,29 +1,10 @@
-import { createStore } from 'redux';
+import { createStore, combineReducers } from 'redux';
 import BookReducer from './Book';
 
-const initialState = [
-  {
-    ID: Math.floor(Math.random() * 100),
-    title: 'learn redux',
-    category: 'Action',
-  },
-  {
-    ID: Math.floor(Math.random() * 100),
-    title: 'Imran Khan',
-    category: 'Biography',
-  },
-  {
-    ID: Math.floor(Math.random() * 100),
-    title: 'world war 2',
-    category: 'History',
-  },
-  {
-    ID: Math.floor(Math.random() * 100),
-    title: 'wrong turn',
-    category: 'Horror',
-  },
-];
+const reducers = combineReducers({
+  books: BookReducer,
+});
 
-const store = createStore(BookReducer, initialState);
+const store = createStore(reducers);
 
 export default store;

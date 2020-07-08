@@ -1,29 +1,41 @@
-/* eslint-disable import/no-cycle */
 import React from 'react';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import Book from '../presentational/Book';
-import store from '../../reducers/index';
 
-export default function BooksList() {
-  return (
-    <div className="booksList">
-      <h2>Books List</h2>
+const BooksList = ({ books }) => (
+  <div className="booksList">
+    <h2>Books List</h2>
 
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Title</th>
-            <th>Category</th>
-          </tr>
-        </thead>
-        <tbody>
-          {store.getState().map(book => (
-            <Book key={book.ID} book={book} />
-          ))}
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Category</th>
+        </tr>
+      </thead>
+      <tbody>
+        {books.map(book => (
+          <Book key={book.ID} book={book} />
+        ))}
 
-        </tbody>
+      </tbody>
 
-      </table>
-    </div>
-  );
-}
+    </table>
+  </div>
+);
+
+const mapStateToProps = state => ({
+  books: state.books,
+});
+
+export default connect(mapStateToProps)(BooksList);
+
+BooksList.propTypes = {
+  books: PropTypes.arrayOf(PropTypes.shape({
+    ID: PropTypes.number,
+    title: PropTypes.string,
+    category: PropTypes.string,
+  })).isRequired,
+};

@@ -1,6 +1,7 @@
 import Actions from '../actions/index';
+import initialState from './InitialState';
 
-const BookReducer = (state = [], action) => {
+const BookReducer = (state = initialState, action) => {
   switch (action.type) {
     case Actions.CREATE_BOOK:
       return [...state, action.book];
