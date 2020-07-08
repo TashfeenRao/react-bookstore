@@ -1,10 +1,10 @@
-const Actions = () => {
+const Actions = (() => {
   const CREATE_BOOK = 'CREATE_BOOK';
   const REMOVE_BOOK = 'REMOVE_BOOK';
 
   const createBook = book => ({
     type: CREATE_BOOK,
-    payload: book,
+    book,
   });
 
   const removeBook = book => ({
@@ -18,6 +18,6 @@ const Actions = () => {
     CREATE_BOOK,
     REMOVE_BOOK,
   };
-};
+})();
 
 export default Actions;

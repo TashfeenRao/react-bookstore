@@ -8,7 +8,7 @@ class BooksForm extends Component {
     super(props);
 
     this.state = {
-      id: Math.floor(Math.random() * 1000),
+      ID: Math.floor(Math.random() * 1000),
       title: '',
       category: '',
     }
@@ -27,22 +27,25 @@ class BooksForm extends Component {
     this.setState({formvalues});
   }
 
-  handleSubmit = () => {
-    this.props.createBook(this.state);
+  handleSubmit = (e) => {
+    e.preventDefault();
+    const { addBook } = this.props;
+    addBook(this.state);
     console.log(this.state);
     console.log(this.props);
     console.log(store.getState())
   }
 
   render () {
-
+    const { title, category } = this.state;
     return (
+      
       <div className="booksForm">
         <h2>BooksForm</h2>
   
         <form onSubmit={this.handleSubmit}>
-          <input type="text" placeholder="Title" name="title" onChange={this.handleChange} value={this.state.title} required />
-          <select name="category" onChange={this.handleChange} value={this.state.category}>
+          <input type="text" placeholder="Title" name="title" onChange={this.handleChange} value={title} required />
+          <select name="category" onChange={this.handleChange} value={category}>
             {this.categories.map(cat => (
               <option key={cat}>{cat}</option>
             ))}
@@ -57,10 +60,10 @@ class BooksForm extends Component {
 
 const mapDispatchToProps = dispatch => {
   return {
-    createBook: (book) => {
+    addBook: (book) => {
       dispatch(Actions.createBook(book))
     }
   }
 }
 
-export default connect(null,mapDispatchToProps)(BooksForm);
+export default connect(null, mapDispatchToProps)(BooksForm);
