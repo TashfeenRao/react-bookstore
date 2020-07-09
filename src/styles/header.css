@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #e8e8e8;
 }
 
 .bookstore-container {
@@ -33,10 +34,11 @@
 
 .BOOKS {
     font-family: Montserrat;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
+    margin-left: 20px;
     line-height: normal;
     letter-spacing: 1.9px;
     color: var(--black-three);
@@ -45,10 +47,11 @@
 .CATEGORIES {
     opacity: 0.5;
     font-family: Montserrat;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
+    margin-left: 20px;
     line-height: normal;
     letter-spacing: 1.9px;
     color: var(--black-three);
