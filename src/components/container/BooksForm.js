@@ -20,11 +20,7 @@ class BooksForm extends Component {
 
   handleChange(e) {
     e.preventDefault();
-    const formvalues = this.state;
-    const { name } = e.target;
-    const { value } = e.target;
-    formvalues[name] = value;
-    this.setState({ formvalues });
+    this.setState({ [e.target.name]: e.target.value });
   }
 
   handleSubmit(e) {

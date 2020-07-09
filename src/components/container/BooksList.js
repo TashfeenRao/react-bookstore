@@ -33,7 +33,7 @@ class BooksList extends Component {
           </thead>
           <tbody>
             {books.map(book => (
-              <Book key={book.ID} book={book} handleRemoveBook={this.handleRemoveBook} />
+              <Book key={book.ID} book={book} onClick={this.handleRemoveBook} />
             ))}
 
           </tbody>
