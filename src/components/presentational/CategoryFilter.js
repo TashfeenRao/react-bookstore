@@ -9,10 +9,10 @@ export default function CategoryFilter(props) {
   return (
     <div className="categoryFilter">
       <h2>Filter by Category</h2>
-      <select name="catFilter" onChange={(e) => changeFilter}>
+      <select name="catFilter" onChange={(e) => changeFilter(e)}>
         {
           categories.map(cat => (
-            <option key={cat}>{cat}</option>
+            <option value={cat} key={cat}>{cat}</option>
           ))
         }
       </select>

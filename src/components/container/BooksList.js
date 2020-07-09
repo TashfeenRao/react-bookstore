@@ -18,9 +18,9 @@ class BooksList extends Component {
     deleteBook(book);
   }
 
-  handleFilterChange(book) {
+  handleFilterChange(e) {
     const { filterBook } = this.props;
-    filterBook(book);
+    filterBook(e.target.value);
   } 
 
   render() {
@@ -54,6 +54,7 @@ class BooksList extends Component {
 
 const mapStateToProps = state => ({
   books: state.books,
+  filter: state.filters,
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -61,8 +62,8 @@ const mapDispatchToProps = dispatch => ({
     dispatch(Actions.removeBook(book));
   },
 
-  filterBook: book => {
-    dispatch(Actions.changeFilter(book));
+  filterBook: category => {
+    dispatch(Actions.changeFilter(category));
   },
 
 });

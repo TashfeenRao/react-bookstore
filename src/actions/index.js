@@ -13,9 +13,9 @@ const Actions = (() => {
     book,
   });
 
-  const changeFilter = book => ({
+  const changeFilter = category => ({
     type: CHANGE_FILTER,
-    book,
+    category,
   })
 
   return {
