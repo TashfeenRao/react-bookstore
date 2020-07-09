@@ -1,72 +1,72 @@
 .panel-bg {
-    height: 95px;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #e8e8e8;
-    padding: 0 50px;
+  height: 95px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 0 50px;
 }
 
 .bookstore-container {
-    display: flex;
-    justify-content: start;
-    align-items: center;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 .oval-container {
-    align-self: end;
-    margin-right: 20px;
+  align-self: end;
+  margin-right: 20px;
 }
 
 .Bookstore-CMS {
-    width: 240px;
-    height: 37px;
-    font-family: Montserrat;
-    font-size: 30px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #0290ff;
+  width: 240px;
+  height: 37px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
 }
 
 .BOOKS {
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    margin-left: 20px;
-    line-height: normal;
-    letter-spacing: 1.9px;
-    color: var(--black-three);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  margin-left: 20px;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
 }
 
 .CATEGORIES {
-    opacity: 0.5;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    margin-left: 20px;
-    line-height: normal;
-    letter-spacing: 1.9px;
-    color: var(--black-three);
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  margin-left: 20px;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
 }
 
 .Oval {
-    width: 45px;
-    height: 45px;
-    border: solid 1px #e8e8e8;
-    border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  border: solid 1px #e8e8e8;
+  border-radius: 50%;
 }
 
 .Mask {
-    width: 17px;
-    height: 17px;
-    color: #0290ff;
-   padding: 10px;
+  width: 17px;
+  height: 17px;
+  color: #0290ff;
+  padding: 10px;
 }

@@ -1,60 +1,59 @@
-.booksForm{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 200px;
+.booksForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
 }
 
 .books-container {
-    width: 1200px;
-    margin-top: 50px;
-    border-top: 1px solid #e8e8e8;
+  width: 1200px;
+  margin-top: 50px;
+  border-top: 1px solid #e8e8e8;
 }
 
 .new-book {
-    width: 174px;
-    height: 24px;
-    font-family: Montserrat;
-    padding-top: 30px;
-    font-size: 20px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: -0.18px;
-    color: #888888;
+  width: 174px;
+  height: 24px;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
 }
 
-.form{
-    display: flex;
-    justify-content: space-between;
+.form {
+  display: flex;
+  justify-content: space-between;
 }
 
-.book-input{
-    width: 664px;
-    height: 45px;
-    border-radius: 4px;
-    border: solid 1px #e8e8e8;
-    background-color: #ffffff;
-    padding-left: 10px;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: -0.15px;
-    color: #c4c4c4;
-  
+.book-input {
+  width: 664px;
+  height: 45px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+  padding-left: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.15px;
+  color: #c4c4c4;
 }
 
-.form-select{
-    height: 45px;
+.form-select {
+  height: 45px;
 }
 
 .add-btn {
-    background-color: #0290ff;
-    padding-right: 10px;
-    height: 45px;
+  background-color: #0290ff;
+  padding-right: 10px;
+  height: 45px;
 }

@@ -1,7 +1,7 @@
 
 .book-category {
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
@@ -20,7 +20,7 @@
 }
 
 .book-title {
-  font-family:  'Roboto Slab', serif;;
+  font-family: 'Roboto Slab', serif;
   font-size: 22px;
   font-weight: bold;
   font-stretch: normal;
@@ -41,7 +41,7 @@
   padding: 0 20px;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
-  background-color: #ffffff;
+  background-color: #fff;
   margin: 10px 20px;
 }
 
@@ -63,7 +63,7 @@
   line-height: normal;
   letter-spacing: 0.5px;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -82,16 +82,15 @@
 }
 
 .categoryFilter h2 {
-    font-family: Montserrat;
-    font-size: 24px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #888;
-    margin-right: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #888;
+  margin-right: 20px;
 }
 
 .custom-select {
@@ -100,8 +99,8 @@
   border-radius: 4px;
   padding: 0 10px;
   border: solid 1px #e8e8e8;
-  background-color: #ffffff;
-  font-family: Montserrat;
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;

@@ -1,6 +1,5 @@
 import React from 'react';
 import '../../styles/header.css';
-import svg from '../../man-shape.svg';
 
 const Header = () => (
   <div className="panel-bg">
