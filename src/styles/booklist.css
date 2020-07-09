@@ -12,6 +12,13 @@
   color: #121212;
 }
 
+.book-item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 .book-title {
   font-family: RobotoSlab;
   font-size: 22px;
@@ -35,6 +42,11 @@
   border: solid 1px #e8e8e8;
   background-color: #ffffff;
   margin: 10px 20px;
+}
+
+.content-left {
+  display: flex;
+  flex-direction: column;
 }
 
 .btn {

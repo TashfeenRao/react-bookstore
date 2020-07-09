@@ -1,3 +1,16 @@
+.booksForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.books-container {
+    width: 1200px;
+    margin-top: 50px;
+    border-top: 1px solid #e8e8e8;
+}
+
 .new-book {
     width: 174px;
     height: 24px;
@@ -11,7 +24,7 @@
     color: #888888;
 }
 
-.book-form{
+.form{
     display: flex;
     justify-content: space-between;
 }
@@ -24,7 +37,12 @@
     background-color: #ffffff;
 }
 
+.form-select{
+    height: 45px;
+}
+
 .add-btn {
     background-color: #0290ff;
     padding-right: 10px;
+    height: 45px;
 }
