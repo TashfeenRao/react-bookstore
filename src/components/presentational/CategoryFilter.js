@@ -1,6 +1,7 @@
 /* eslint-disable react/forbid-prop-types */
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
+
 const categories = ['All', 'Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
 export default function CategoryFilter(props) {
@@ -9,7 +10,7 @@ export default function CategoryFilter(props) {
   return (
     <div className="categoryFilter">
       <h2>Filter by Category</h2>
-      <select name="catFilter" onChange={(e) => changeFilter(e)}>
+      <select name="catFilter" onChange={e => changeFilter(e)}>
         {
           categories.map(cat => (
             <option value={cat} key={cat}>{cat}</option>
@@ -19,3 +20,7 @@ export default function CategoryFilter(props) {
     </div>
   );
 }
+
+CategoryFilter.propTypes = {
+  changeFilter: PropTypes.func.isRequired,
+};

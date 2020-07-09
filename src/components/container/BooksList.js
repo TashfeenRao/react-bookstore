@@ -21,11 +21,12 @@ class BooksList extends Component {
   handleFilterChange(e) {
     const { filterBook } = this.props;
     filterBook(e.target.value);
-  } 
+  }
 
   render() {
     const { books, filter } = this.props;
-    const filteredBooks = (filter != 'All') ? books.filter(book => book.category === filter) : books;
+    const filteredBooks = () => ((filter !== 'All') ? books.filter(book => book.category === filter) : books);
+
     return (
       <div className="booksList">
         <h2>Books List</h2>
@@ -41,7 +42,7 @@ class BooksList extends Component {
             </tr>
           </thead>
           <tbody>
-            {filteredBooks.map(book => (
+            {filteredBooks().map(book => (
               <Book key={book.ID} book={book} onClick={this.handleRemoveBook} />
             ))}
 
@@ -78,4 +79,6 @@ BooksList.propTypes = {
     category: PropTypes.string,
   })).isRequired,
   deleteBook: PropTypes.func.isRequired,
+  filterBook: PropTypes.func.isRequired,
+  filter: PropTypes.string.isRequired,
 };

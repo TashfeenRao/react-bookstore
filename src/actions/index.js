@@ -16,7 +16,7 @@ const Actions = (() => {
   const changeFilter = category => ({
     type: CHANGE_FILTER,
     category,
-  })
+  });
 
   return {
     createBook,
