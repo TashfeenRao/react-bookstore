@@ -1,10 +1,21 @@
 .panel-bg{
-    width: 1400px;
+    width: 100%;
     height: 95px;
     background-color: #ffffff;
     display: flex;
-    justify-content: ;
+    justify-content: space-between;
     align-items: center;
+}
+
+.bookstore-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.oval-container {
+    align-self: end;
+    margin-right: 20px;
 }
 
 .Bookstore-CMS {
@@ -21,8 +32,6 @@
 }
 
 .BOOKS {
-    width: 59px;
-    height: 16px;
     font-family: Montserrat;
     font-size: 13px;
     font-weight: normal;
@@ -34,8 +43,6 @@
 }
 
 .CATEGORIES {
-    width: 105px;
-    height: 16px;
     opacity: 0.5;
     font-family: Montserrat;
     font-size: 13px;
@@ -51,11 +58,12 @@
     width: 45px;
     height: 45px;
     border: solid 1px #e8e8e8;
+    border-radius: 50%;
 }
 
 .Mask {
     width: 17px;
     height: 17px;
-    background-color: #0290ff;
     color: #0290ff;
+   padding: 10px;
 }
