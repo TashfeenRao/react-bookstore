@@ -1,11 +1,11 @@
-.panel-bg{
-    width: 100%;
+.panel-bg {
     height: 95px;
     background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #e8e8e8;
+    padding: 0 50px;
 }
 
 .bookstore-container {
