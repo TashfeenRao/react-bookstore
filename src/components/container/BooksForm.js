@@ -48,7 +48,7 @@ class BooksForm extends Component {
           <h2 className="new-book">ADD NEW BOOK</h2>
 
           <form onSubmit={this.handleSubmit} className="form">
-            <input className="book-input" type="text" placeholder="Title" name="title" onChange={this.handleChange} value={title} required />
+            <input className="book-input" type="text" placeholder="Book title" name="title" onChange={this.handleChange} value={title} required />
             <select name="category" onChange={this.handleChange} value={category} className="custom-select form-select">
               {categories.map(cat => (
                 <option key={cat}>{cat}</option>

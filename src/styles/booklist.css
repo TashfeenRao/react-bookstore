@@ -93,8 +93,17 @@
   width: 285px;
   height: 45px;
   border-radius: 4px;
+  padding-left: 10px;
   border: solid 1px #e8e8e8;
   background-color: #ffffff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.15px;
+  color: #c4c4c4;
 }
 
 .custom-select option {

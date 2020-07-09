@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 200px;
 }
 
 .books-container {
@@ -15,6 +16,7 @@
     width: 174px;
     height: 24px;
     font-family: Montserrat;
+    padding-top: 30px;
     font-size: 20px;
     font-weight: bold;
     font-stretch: normal;
@@ -35,6 +37,16 @@
     border-radius: 4px;
     border: solid 1px #e8e8e8;
     background-color: #ffffff;
+    padding-left: 10px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.15px;
+    color: #c4c4c4;
+  
 }
 
 .form-select{
