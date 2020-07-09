@@ -1,0 +1,61 @@
+.panel-bg{
+    width: 1400px;
+    height: 95px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: ;
+    align-items: center;
+}
+
+.Bookstore-CMS {
+    width: 240px;
+    height: 37px;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0290ff;
+}
+
+.BOOKS {
+    width: 59px;
+    height: 16px;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.9px;
+    color: var(--black-three);
+}
+
+.CATEGORIES {
+    width: 105px;
+    height: 16px;
+    opacity: 0.5;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.9px;
+    color: var(--black-three);
+}
+
+.Oval {
+    width: 45px;
+    height: 45px;
+    border: solid 1px #e8e8e8;
+}
+
+.Mask {
+    width: 17px;
+    height: 17px;
+    background-color: #0290ff;
+    color: #0290ff;
+}
