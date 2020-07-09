@@ -3,12 +3,14 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Book from '../presentational/Book';
 import Actions from '../../actions/index';
+import CategoryFilter from '../presentational/CategoryFilter';
 
 class BooksList extends Component {
   constructor(props) {
     super(props);
 
     this.handleRemoveBook = this.handleRemoveBook.bind(this);
+    this.handleFilterChange = this.handleFilterChange.bind(this);
   }
 
   handleRemoveBook(book) {
@@ -16,12 +18,18 @@ class BooksList extends Component {
     deleteBook(book);
   }
 
+  handleFilterChange(book) {
+    const { filterBook } = this.props;
+    filterBook(book);
+  } 
+
   render() {
     const { books } = this.props;
     return (
       <div className="booksList">
         <h2>Books List</h2>
 
+        <CategoryFilter changeFilter={this.handleFilterChange} />
         <table>
           <thead>
             <tr>
@@ -52,6 +60,11 @@ const mapDispatchToProps = dispatch => ({
   deleteBook: book => {
     dispatch(Actions.removeBook(book));
   },
+
+  filterBook: book => {
+    dispatch(Actions.changeFilter(book));
+  },
+
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(BooksList);

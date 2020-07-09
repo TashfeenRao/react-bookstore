@@ -1,6 +1,7 @@
 const Actions = (() => {
   const CREATE_BOOK = 'CREATE_BOOK';
   const REMOVE_BOOK = 'REMOVE_BOOK';
+  const CHANGE_FILTER = 'CHANGE_FILTER';
 
   const createBook = book => ({
     type: CREATE_BOOK,
@@ -12,11 +13,18 @@ const Actions = (() => {
     book,
   });
 
+  const changeFilter = book => ({
+    type: CHANGE_FILTER,
+    book,
+  })
+
   return {
     createBook,
     removeBook,
+    changeFilter,
     CREATE_BOOK,
     REMOVE_BOOK,
+    CHANGE_FILTER,
   };
 })();
 
