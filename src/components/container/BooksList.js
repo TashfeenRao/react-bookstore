@@ -24,7 +24,8 @@ class BooksList extends Component {
   } 
 
   render() {
-    const { books } = this.props;
+    const { books, filter } = this.props;
+    const filteredBooks = (filter != 'All') ? books.filter(book => book.category === filter) : books;
     return (
       <div className="booksList">
         <h2>Books List</h2>
@@ -40,7 +41,7 @@ class BooksList extends Component {
             </tr>
           </thead>
           <tbody>
-            {books.map(book => (
+            {filteredBooks.map(book => (
               <Book key={book.ID} book={book} onClick={this.handleRemoveBook} />
             ))}
 
