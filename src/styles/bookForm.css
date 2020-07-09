@@ -1,0 +1,30 @@
+.new-book {
+    width: 174px;
+    height: 24px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.18px;
+    color: #888888;
+}
+
+.book-form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.book-input{
+    width: 664px;
+    height: 45px;
+    border-radius: 4px;
+    border: solid 1px #e8e8e8;
+    background-color: #ffffff;
+}
+
+.add-btn {
+    background-color: #0290ff;
+    padding-right: 10px;
+}
