@@ -1,23 +1,31 @@
-const Actions = () => {
+const Actions = (() => {
   const CREATE_BOOK = 'CREATE_BOOK';
   const REMOVE_BOOK = 'REMOVE_BOOK';
+  const CHANGE_FILTER = 'CHANGE_FILTER';
 
   const createBook = book => ({
     type: CREATE_BOOK,
-    payload: book,
+    book,
   });
 
   const removeBook = book => ({
     type: REMOVE_BOOK,
-    payload: book,
+    book,
+  });
+
+  const changeFilter = category => ({
+    type: CHANGE_FILTER,
+    category,
   });
 
   return {
     createBook,
     removeBook,
+    changeFilter,
     CREATE_BOOK,
     REMOVE_BOOK,
+    CHANGE_FILTER,
   };
-};
+})();
 
 export default Actions;
