@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Book from '../presentational/Book';
 import Actions from '../../actions/index';
 import CategoryFilter from '../presentational/CategoryFilter';
+import '../../styles/booklist.css';
 
 class BooksList extends Component {
   constructor(props) {
@@ -29,26 +30,16 @@ class BooksList extends Component {
 
     return (
       <div className="booksList">
-        <h2>Books List</h2>
+        <div className="book-filter">
+          <CategoryFilter changeFilter={this.handleFilterChange} />
+        </div>
 
-        <CategoryFilter changeFilter={this.handleFilterChange} />
-        <table>
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Title</th>
-              <th>Category</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            {filteredBooks().map(book => (
-              <Book key={book.ID} book={book} onClick={this.handleRemoveBook} />
-            ))}
+        <div className="book-item">
+          {filteredBooks().map(book => (
+            <Book key={book.ID} book={book} onClick={this.handleRemoveBook} />
+          ))}
+        </div>
 
-          </tbody>
-
-        </table>
       </div>
     );
   }

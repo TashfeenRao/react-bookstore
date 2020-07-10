@@ -1,7 +1,7 @@
 const initialState = [
   {
     ID: Math.floor(Math.random() * 1000),
-    title: 'learn redux',
+    title: 'Bloodspot',
     category: 'Action',
   },
   {
