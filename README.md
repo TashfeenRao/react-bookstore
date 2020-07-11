@@ -5,7 +5,9 @@
   <br>
 </h1>
 
-<h4 align="center"> This Project built using Redux and React.
+<h4 align="center">Implemented library management web application.
+Users can add new books, remove books, and filter books.
+Built with:  React, Redux, Javascript, Webpack, Babel, Eslint, GitHub, Heroku.
 </h4>
 </br>
 
@@ -24,17 +26,17 @@
   <a href="#key-features">Key Features</a> •
   <a href="#how-to-use">How To Use</a> •
   <a href="#credits">Credits</a> •
-  <a href="#related">Related</a> •
-  <a href="#license">License</a>
+  <a href="#screen-shot">Screen Shot</a> •
+  <a href="#license">License</a> •
+  <a href="#authors">Authors</a> •
 </p>
 
 
 ## Key Features
 
-* User can 
-* User can  
-* User can 
-* User can 
+* User can add new book to library
+* User can remove book from library
+* User can filter boos from library
 
 ## How To Use
 
@@ -62,13 +64,14 @@ https://react-bookstore-tash-den.herokuapp.com/.
 
 ## Emailware
 
-Calculator React is an Open source. if you liked using this app or it has helped you in any way, I'd like you send me an email at <raotashfeen25@gmail.com> about anything you'd want to say about this software. I'd really appreciate it!
+Book-store is an Open-source. if you liked using this app or it has helped you in any way, I'd like you to send me an email at <raotashfeen25@gmail.com> about anything you'd want to say about this software. I'd appreciate it!
 
 ## Credits
 
-This software uses the following open source packages:
+This software uses the following open-source packages:
 
 - [React](https://React.org/)
+- [Redux](https://Redux.org/)
 - [Node.js](https://nodejs.org/)
 - [Webpack](https://webpack.js.org/)
 - [Babel](https://babeljs.io/)
@@ -80,7 +83,7 @@ This software uses the following open source packages:
 
 MIT
 
-Authors
+## Authors
 ---
 
 <h2>Tashfeen Rao and Denis Oluka</h2>
