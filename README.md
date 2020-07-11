@@ -32,8 +32,8 @@
 
 ## Key Features
 
-* User can add new book to library
-* User can remove book from library
+* User can add a new book to the library
+* User can remove the book from the library
 * User can filter boos from library
 
 ## How To Use
