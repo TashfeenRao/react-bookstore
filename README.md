@@ -56,7 +56,7 @@ $ npm start
 
 ## Screen Shot
 
-Comming soon
+![screenshot](screencapture-react-bookstore-tash-den-herokuapp-2020-07-10-16_10_53.png)
 
 ## Live version
 
