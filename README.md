@@ -5,9 +5,7 @@
   <br>
 </h1>
 
-<h4 align="center">Implemented library management web application.
-Users can add new books, remove books, and filter books.
-Built with:  React, Redux, Javascript, Webpack, Babel, Eslint, GitHub, Heroku.
+<h4 align="center">Implemented the main functionalities of the library management web application. Users can add new books, remove books, and filter books. Built with: React, Redux, Javascript, Webpack, Babel, Eslint, GitHub, Heroku.
 </h4>
 </br>
 
